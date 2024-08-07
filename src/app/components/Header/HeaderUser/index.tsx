@@ -18,11 +18,15 @@ export function HeaderUser() {
     <Menu>
       <MenuButton onClick={() => setIsOpen(!isOpen)} className="flex items-center space-x-4">
         <span className="hidden lg:block">Charles Moore</span>
-        <img src="/public/Charles.jpg" alt="Charles Moore"
-             className="w-[30px] aspect-square rounded-full object-cover" />
+        <img
+          src="/public/Charles.jpg"
+          alt="Charles Moore"
+          className="aspect-square w-[30px] rounded-full object-cover"
+        />
       </MenuButton>
       <Transition
-        show={isOpen} appear={true}
+        show={isOpen}
+        appear={true}
         enter="transition-opacity duration-100"
         enterFrom="opacity-0"
         enterTo="opacity-100"
@@ -32,10 +36,9 @@ export function HeaderUser() {
       >
         <MenuItems
           ref={menuRef}
-          outsideClick={() => setIsOpen(false)}
           static
           anchor="bottom end"
-          className="mt-3 rounded-lg border shadow border-primary-100 w-[200px] bg-white space-y-1 p-1 text-[1.05rem]"
+          className="mt-3 w-[200px] space-y-1 rounded-lg border border-primary-100 bg-white p-1 text-[1.05rem] shadow"
         >
           <MenuItem>
             <button className={menuItemCls}>Settings</button>
