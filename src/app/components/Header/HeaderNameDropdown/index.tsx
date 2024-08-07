@@ -1,6 +1,6 @@
 import { useCallback, useRef, useState } from 'react';
 import { Menu, MenuButton, MenuItems, Transition } from '@headlessui/react';
-import { useOutsideClickFN } from '../../../../helpers/OutsideClickFn.tsx';
+import { useOutsideClickFN } from '../../../../helpers/useOutsideClickFn.tsx';
 import { List } from 'react-bootstrap-icons';
 import { appRoutesArray } from '../../../../helpers/AppRoutes.tsx';
 import { NavLink } from 'react-router-dom';

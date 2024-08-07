@@ -1,6 +1,6 @@
 import { useCallback, useRef, useState } from 'react';
 import { Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/react';
-import { useOutsideClickFN } from '../../../../helpers/OutsideClickFn.tsx';
+import { useOutsideClickFN } from '../../../../helpers/useOutsideClickFn.tsx';
 
 const menuItemCls = 'hover:bg-primary-100 text-black/75 hover:text-black w-full text-left rounded-md p-1';
 

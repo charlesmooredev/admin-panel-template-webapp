@@ -10,9 +10,9 @@ export function HeaderWithContent({ children }: Props) {
   return (
     <div className="w-full">
       <HeaderTop />
-      <div className="lg:flex lg:space-x-2">
+      <div className="lg:flex">
         <HeaderSidebar />
-        <div className="flex-grow p-2">{children}</div>
+        <div className="h-[calc(100vh-60px)] flex-grow overflow-y-auto p-2">{children}</div>
       </div>
     </div>
   );
