@@ -1,17 +1,13 @@
-import { useCallback, useMemo, useRef, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { Menu, MenuButton, MenuItems, Transition } from '@headlessui/react';
 import { useOutsideClickFN } from '../../../../helpers/OutsideClickFn.tsx';
-import { ChevronDown } from 'react-bootstrap-icons';
-import { appRoutesArray } from '../../../../helpers/AppRoutes.ts';
+import { List } from 'react-bootstrap-icons';
+import { appRoutesArray } from '../../../../helpers/AppRoutes.tsx';
 import { NavLink } from 'react-router-dom';
 
 export function HeaderNameDropdown() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
-
-  const chevronCls = useMemo(() => {
-    return `${isOpen ? 'rotate-180' : 'rotate-0'} lg:hidden`;
-  }, [isOpen]);
 
   const closeMenuFn = useCallback(() => {
     setIsOpen(false);
@@ -21,9 +17,9 @@ export function HeaderNameDropdown() {
 
   return (
     <Menu>
-      <MenuButton onClick={() => setIsOpen(!isOpen)} className="flex h-[30px] items-center space-x-4">
-        <span>App Name</span>
-        <ChevronDown className={chevronCls} />
+      <MenuButton onClick={() => setIsOpen(!isOpen)} className="flex items-center">
+        <List size={25} className="mr-1 lg:hidden" />
+        <span className="text-[1.10rem]">App Name</span>
       </MenuButton>
       <Transition
         show={isOpen}

@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { AppRoutes } from '../../../helpers/AppRoutes.ts';
+import { AppRoutes } from '../../../helpers/AppRoutes.tsx';
 import { DashboardPage } from '../../pages/DashboardPage';
 import { CustomersPage } from '../../pages/CustomersPage';
 import { ProductsPage } from '../../pages/ProductsPage';

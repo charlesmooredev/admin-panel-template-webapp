@@ -1,4 +1,4 @@
-import { appRoutesArray } from '../../../../helpers/AppRoutes.ts';
+import { appRoutesArray } from '../../../../helpers/AppRoutes.tsx';
 import { NavLink } from 'react-router-dom';
 
 export function HeaderSidebar() {
@@ -8,10 +8,13 @@ export function HeaderSidebar() {
         {appRoutesArray.map(route => (
           <NavLink
             to={route.route}
-            className={`${({ isActive }) => (isActive ? 'font-semibold' : 'font-normal')} text-[1.10rem]`}
+            className={({ isActive }) =>
+              `${isActive ? 'bg-primary-200 text-black' : 'font-normal text-primary-900 hover:bg-primary-50'} transition-effects flex items-center space-x-2 rounded-lg p-2 text-[1.10rem]`
+            }
             key={route.route}
           >
-            {route.name}
+            <div>{route.icon}</div>
+            <div>{route.name}</div>
           </NavLink>
         ))}
       </div>
