@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 export const useOutsideClickFN = (ref, clickFn) => {
   useEffect(() => {
-    const listener = (event) => {
+    const listener = event => {
       if (ref.current && !ref.current.contains(event.target)) {
         clickFn(event);
       }

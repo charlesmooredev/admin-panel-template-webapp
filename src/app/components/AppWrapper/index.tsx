@@ -6,7 +6,7 @@ interface Props {
 
 export function AppWrapper({ children }: Props) {
   return (
-    <div className="w-screen flex justify-center overflow-x-hidden">
+    <div className="flex w-screen justify-center overflow-x-hidden">
       <div className="w-full">{children}</div>
     </div>
   );

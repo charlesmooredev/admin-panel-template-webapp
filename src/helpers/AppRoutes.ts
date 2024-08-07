@@ -1,11 +1,11 @@
 export enum AppRoutes {
-  Home = "/",
-  Customers = "/customers",
-  Products = "/products",
+  Home = '/',
+  Customers = '/customers',
+  Products = '/products',
 }
 
 export const appRoutesArray = [
-  { name: "Dashboard", route: AppRoutes.Home },
-  { name: "Products", route: AppRoutes.Products },
-  { name: "Customers", route: AppRoutes.Customers },
+  { name: 'Dashboard', route: AppRoutes.Home },
+  { name: 'Products', route: AppRoutes.Products },
+  { name: 'Customers', route: AppRoutes.Customers },
 ];

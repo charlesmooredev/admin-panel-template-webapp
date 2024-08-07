@@ -18,11 +18,7 @@ export function HeaderUser() {
     <Menu>
       <MenuButton onClick={() => setIsOpen(!isOpen)} className="flex items-center space-x-4">
         <span className="hidden lg:block">Charles Moore</span>
-        <img
-          src="/public/Charles.jpg"
-          alt="Charles Moore"
-          className="aspect-square w-[30px] rounded-full object-cover"
-        />
+        <img src="/Charles.jpg" alt="Charles Moore" className="aspect-square w-[30px] rounded-full object-cover" />
       </MenuButton>
       <Transition
         show={isOpen}

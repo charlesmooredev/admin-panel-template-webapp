@@ -10,7 +10,7 @@ export function HeaderWithContent({ children }: Props) {
   return (
     <div className="w-full">
       <HeaderTop />
-      <div className="lg:space-x-2 lg:flex">
+      <div className="lg:flex lg:space-x-2">
         <HeaderSidebar />
         <div className="flex-grow p-2">{children}</div>
       </div>

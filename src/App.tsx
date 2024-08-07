@@ -1,6 +1,6 @@
-import "./App.css";
-import { RouteManager } from "./app/components/RouteManager";
-import { AppWrapper } from "./app/components/AppWrapper";
+import './App.css';
+import { RouteManager } from './app/components/RouteManager';
+import { AppWrapper } from './app/components/AppWrapper';
 
 function App() {
   return (
